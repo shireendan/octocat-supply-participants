@@ -2,9 +2,9 @@ name: 🐳 Build and Publish
 
 on:
   push:
-    branches: [ main ]
+    branches: [ reference_solution ]
   pull_request:
-    branches: [ main ]
+    branches: [ reference_solution ]
   workflow_dispatch:
 
 jobs:
@@ -49,7 +49,7 @@ jobs:
       actions: write
     needs: [build_api, build_frontend]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/reference_solution' && github.event_name == 'push'
     steps:
       - name: Trigger deployment workflow
         uses: actions/github-script@v8
@@ -59,7 +59,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'deploy.yml',
-              ref: 'main',
+              ref: 'reference_solution',
               inputs: {
                 'api_image': '${{ needs.build_api.outputs.image }}',
                 'api_digest': '${{ needs.build_api.outputs.digest }}',

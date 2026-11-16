@@ -92,15 +92,15 @@ Describe the app only; ignore the labs/ folder.
 **Why a new chat?** So that the earlier answer can't influence this one.
 
 ### A5. Compare (⏱ 4 min)
-Open `.github/copilot-instructions.md` on branch **`main`** on GitHub, or run:
+Open `.github/copilot-instructions.md` on branch **`reference_solution`** on GitHub, or run:
 ```bash
 git add .github/copilot-instructions.md
-git diff origin/main -- .github/copilot-instructions.md
+git diff origin/reference_solution -- .github/copilot-instructions.md
 ```
 - OctoCAT's original (50 lines) has review guidance, an escalation order and tone rules. What did it include that you didn't?
 - The original has **no** TAO block, because we add it live in our demo. TAO lines that appear only in your version are expected.
 
-**Catch up:** `git checkout origin/main -- .github/copilot-instructions.md`, then repeat A3.
+**Catch up:** `git checkout origin/reference_solution -- .github/copilot-instructions.md`, then repeat A3.
 
 ✅ The "after" answer uses TAO, and **References** lists your instructions file.
 
@@ -189,11 +189,11 @@ For automated agent test runs, use the [single-run commands](troubleshooting.md#
 
 ### B6. Compare (⏱ 2 min)
 ```bash
-git diff origin/main -- .github/skills/api-endpoint/SKILL.md
+git diff origin/reference_solution -- .github/skills/api-endpoint/SKILL.md
 ```
 Compare your header with OctoCAT's and confirm that the database paths match the reference's `app/api/database/` paths. Your description can differ; check any other differences against the exercise requirements.
 
-**Catch up:** `git checkout origin/main -- .github/skills/api-endpoint/SKILL.md`, then repeat the required database-path correction above before using the skill again.
+**Catch up:** `git checkout origin/reference_solution -- .github/skills/api-endpoint/SKILL.md`, then repeat the required database-path correction above before using the skill again.
 
 ✅ `api-endpoint` is listed, and the DeliveryVehicle endpoints show in Swagger.
 

@@ -35,7 +35,7 @@ Complete the app and Copilot checks before the training. Both options require re
 ## Branches
 
 - **`workshop`:** where you work during the labs.
-- **`main`:** the complete app and reference solution you'll compare with. Never commit to `main`.
+- **`reference_solution`:** the complete app and reference solution you'll compare with. Never commit to `reference_solution`.
 
 ## What we'll do together
 
