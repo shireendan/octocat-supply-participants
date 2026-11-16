@@ -2,9 +2,9 @@ name: 🧪 CI - Build, Test and Lint
 
 on:
   push:
-    branches: [ main ]
+    branches: [ reference_solution ]
   pull_request:
-    branches: [ main ]
+    branches: [ reference_solution ]
 
 permissions:
   contents: read

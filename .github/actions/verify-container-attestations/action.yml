@@ -100,7 +100,7 @@ runs:
 
           const allPassed = provenancePassed && sbomPassed;
           const hostname = '${{ steps.set-hostname.outputs.hostname }}';
-          const workflowUrl = `https://${hostname}/${{ github.repository }}/blob/main/.github/workflows/build-publish-containers.yml`;
+          const workflowUrl = `https://${hostname}/${{ github.repository }}/blob/reference_solution/.github/workflows/build-publish-containers.yml`;
 
           // Build summary report
           let summary = `# 🔍 Container Attestation Verification Report

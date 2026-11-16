@@ -85,8 +85,8 @@ Read each step's boundaries carefully. **"Don't implement anything"**, **"only e
 You use OctoCAT Supply throughout the day rather than starting a different demo each session. Keep your workspace between sessions and follow any **Before you leave** or **Before you start** instructions in the lab sheets.
 
 - **`workshop` is your working branch.** Selected Copilot configuration was deliberately removed or left incomplete for F2 and F3. Rebuilding it lets you see what changes when an agent has a role, team instructions or a reusable skill. A **Missing on your branch** note describes that starting point; it doesn't mean your setup failed.
-- **`main` provides reference material, not an answer to every task.** Some **Compare** steps use the original configuration to give you ideas. F1 and F4 do not have a finished feature solution on `main`; their checks, and in F4 your specification and tests, determine whether you're done.
-- **Compare does not mean copy everything.** Your wording and implementation can differ. Look for useful differences in behaviour, scope and completeness. Work on `workshop`; don't switch to or commit to `main` to complete a lab.
+- **`reference_solution` provides reference material, not an answer to every task.** Some **Compare** steps use the original configuration to give you ideas. F1 and F4 do not have a finished feature solution on `reference_solution`; their checks, and in F4 your specification and tests, determine whether you're done.
+- **Compare does not mean copy everything.** Your wording and implementation can differ. Look for useful differences in behaviour, scope and completeness. Work on `workshop`; don't switch to or commit to `reference_solution` to complete a lab.
 - **Carry forward the right context, not every experiment.** For example, F4 asks you to remove the fictional TAO team rule introduced in F3 before agents write real code. Follow that cleanup step rather than carrying an intentionally made-up dependency into the next feature.
 
 ### Work as an engineer, not a spectator
@@ -152,7 +152,7 @@ A different answer from your neighbour is not automatically a problem. First che
 
 ### What "Catch up" does
 
-A Catch up command takes the reference version of **the file named in that command** from `main` and puts it into your working branch. It lets you continue learning without having to finish recreating that file first.
+A Catch up command takes the reference version of **the file named in that command** from `reference_solution` and puts it into your working branch. It lets you continue learning without having to finish recreating that file first.
 
 - **It can replace your local edits to that file.** Save a separate copy of anything you want to keep, and ask for help if you're unsure.
 - **Use the exact step in the current lab.** Don't reset the whole workspace or restore the entire branch. Some labs require another action afterwards; for example, F3 asks you to reapply its team rule after restoring the instructions.

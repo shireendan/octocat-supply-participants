@@ -144,7 +144,7 @@ DB_TIMEOUT=30000
 
 3. **Deployment Strategy**
    - for any push, execute the CI build
-   - for PRs and pushes to `main`:
+   - for PRs and pushes to `reference_solution`:
      - build and test the code
      - create the docker images using the short SHA for the version tag
      - use AZ login to get the credentials for the AZCR from the AZURE_ACR_NAME and AZURE_RESOURCE_GROUP_PROD vars
