@@ -1,8 +1,3 @@
----
-name: api-endpoint
-description: Generate REST API endpoints for the OctoCAT Supply Chain application following established patterns. Use this skill when creating new CRUD endpoints, adding routes, implementing repository classes, or defining TypeScript models with Swagger documentation. Triggers on requests to add API features, create endpoints, implement data access layers, or extend the Express.js backend.
----
-
 # API Endpoint Development
 
 This skill guides the creation of REST API endpoints following the OctoCAT Supply Chain application's established patterns.
@@ -352,12 +347,12 @@ See `references/database-conventions.md` for migration file conventions.
 
 ### Step 6: Create Seed Data
 
-**Always create seed data** for new entities in `app/api/database/seed/{NNN}_{entity_names}.sql`.
+**Always create seed data** for new entities in `app/api/sql/seed/{NNN}_{entity_names}.sql`.
 
 **Seed file naming convention:**
 - Use the next sequential number (e.g., `005_categories.sql`)
 - Use snake_case plural entity name
-- Place in `app/api/database/seed/` directory
+- Place in `app/api/sql/seed/` directory
 
 **Seed data best practices:**
 ```sql
@@ -460,8 +455,8 @@ When creating a new API endpoint, ensure you complete ALL steps:
 - [ ] **Repository** (`app/api/src/repositories/{entity}sRepo.ts`) - Data access with all CRUD methods
 - [ ] **Route** (`app/api/src/routes/{entity}.ts`) - Express handlers + Swagger docs
 - [ ] **Register** (`app/api/src/index.ts`) - Add route to Express app
-- [ ] **Migration** (`app/api/database/migrations/{NNN}_{description}.sql`) - CREATE TABLE statement
-- [ ] **Seed Data** (`app/api/database/seed/{NNN}_{entity_names}.sql`) - 3-5 realistic examples
+- [ ] **Migration** (`app/api/sql/migrations/{NNN}_{description}.sql`) - CREATE TABLE statement
+- [ ] **Seed Data** (`app/api/sql/seed/{NNN}_{entity_names}.sql`) - 3-5 realistic examples
 - [ ] **Unit Tests** (`app/api/src/repositories/{entity}sRepo.test.ts`) - All CRUD operations, edge cases, errors
 - [ ] **Route Tests** (`app/api/src/routes/{entity}.test.ts`) - Integration tests for HTTP endpoints
 

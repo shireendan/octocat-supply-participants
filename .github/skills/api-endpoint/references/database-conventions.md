@@ -222,7 +222,7 @@ throw new ValidationError('Invalid reference to related entity');
 
 ## Adding a New Table
 
-1. Create migration: `app/api/database/migrations/00X_add_table_name.sql`
-2. Create seed (if needed): `app/api/database/seed/00X_table_name.sql`
+1. Create migration: `app/api/sql/migrations/00X_add_table_name.sql`
+2. Create seed (if needed): `app/api/sql/seed/00X_table_name.sql`
 3. Restart API to run migrations
 4. Create model, repository, and routes following skill patterns
