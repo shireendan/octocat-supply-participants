@@ -37,7 +37,7 @@ Links are optional background; some examples use other languages or IDEs. Follow
 
 ## Before you start
 
-Complete the [setup checks](01-setup.md), then follow the cleanup and chat instructions below.
+Complete the [setup checks](01-setup.md) in **your own template-based repo** on `workshop`, then follow the cleanup and chat instructions below.
 
 Run terminal commands from the **repo root**. The Microsoft Learn HTTP MCP setup is the same in Codespaces and in VS Code on a Windows laptop or DevBox.
 

@@ -55,7 +55,7 @@ When a lab says **Ports** then **3000**, local users open http://localhost:3000/
 | **Your story / The story** | The user's situation and the reason for the task. Use it to judge whether the proposed solution solves the right problem. |
 | **You'll practise / Done when / completion checks** | The learning goal and the observable finish line. Check the result yourself before moving on. |
 | **`<angle brackets>`** | Replace the placeholder, including the brackets, with your own value. For example, `<ROLE>` could become `data engineer`; `<plan-file>.md` must become the actual plan filename. |
-| **Ask / Agent / Plan** | Choices in the agent picker, not text to type into a prompt. Use Ask to understand, Plan to work out an approach and Agent to carry out changes. Select the choice requested by the step. |
+| **Ask / Agent / Plan** | Select the requested choice in the agent picker, not in the prompt. See the [Chat controls](01-setup.md#4-check-copilot-and-learn-the-chat-controls). |
 | **New chat** | Use the **+** at the top of Chat to start a fresh conversation, so an earlier answer doesn't influence the next experiment. It does **not** reset your files. If a lab says to stay in the same chat, keep its conversation context; F4 relies on this. |
 | **Attach a file / Add Context** | Give Copilot the specific material the task depends on, for example by dragging a file into Chat or using **Add Context**. Don't assume it knows which design, rule or edited plan you mean. |
 | **Keep / Undo** | Review the proposed file changes, then decide whether to retain or reject them. Don't click Keep just because the agent says it has finished. |
@@ -70,7 +70,7 @@ Check the lab's completion criteria, chat mode, branch, files and placeholders. 
 | Situation | Useful next step |
 |---|---|
 | The codespace or local workspace, Copilot sign-in or app won't start | Open [troubleshooting](troubleshooting.md#common-problems) and ask a facilitator if it persists. |
-| Codespaces is unavailable or local software installation is restricted | Check the [environment options](01-setup.md#1-choose-your-environment) with a facilitator. If none can be ready in time, ask about pairing with someone who has a working setup. |
+| Codespaces is unavailable or local software installation is restricted | Check the [environment options](01-setup.md#2-choose-your-environment) with a facilitator. If none can be ready in time, ask about pairing with someone who has a working setup. |
 | A menu or agent isn't available as described | Check that lab's fallback instructions. UI labels and available controls can vary; don't spend the session hunting for a button. |
 | The agent edited more than you requested | Stop it, review the affected changes and ask for help if you're unsure what to undo. Don't accept unrelated edits to keep moving. |
 | The output looks different but seems reasonable | Check the stated requirements and evidence. Discuss the differences instead of trying to reproduce someone else's exact output. |

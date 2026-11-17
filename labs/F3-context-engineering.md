@@ -35,7 +35,7 @@ Links are optional official references; follow the exercises below for the works
 
 ## Before you start
 
-Complete the [setup checks](01-setup.md) and stay on `workshop`. Use fresh chats where requested so you compare instructions, not old conversation history.
+Complete the [setup checks](01-setup.md) and stay in **your own template-based repo** on `workshop`. Use fresh chats where requested so you compare instructions, not old conversation history.
 
 Run terminal commands from the **repo root**. Use the Codespaces commands or the Windows PowerShell alternatives for your laptop or DevBox.
 
@@ -92,7 +92,7 @@ Describe the app only; ignore the labs/ folder.
 **Why a new chat?** So that the earlier answer can't influence this one.
 
 ### A5. Compare (⏱ 4 min)
-Open `.github/copilot-instructions.md` on branch **`reference_solution`** on GitHub, or run:
+Open `.github/copilot-instructions.md` on branch **`reference_solution`** in **your own repo** on GitHub, or run:
 ```bash
 git add .github/copilot-instructions.md
 git diff origin/reference_solution -- .github/copilot-instructions.md
